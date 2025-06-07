@@ -1,0 +1,159 @@
+## STAKES ROUTES
+
+# Get All Stakes
+GET http://localhost:3000/stake
+
+###
+
+# Get Stake by ID
+GET http://localhost:3000/stake/6843d6b65f5845bd8531a362
+
+
+### # Create Stake
+POST http://localhost:3000/stake HTTP/1.1
+Content-Type: application/json
+
+{
+    "country": "El Salvador",
+    "name": "Molino"
+}
+
+### # Update Stake
+PUT http://localhost:3000/stake/6843c975b9c7e20aacaa63b9 HTTP/1.1
+Content-Type: application/json
+
+{
+    "country": "El Salvador",
+    "name": "Juayua"
+}
+
+### # Delete Stake
+DELETE http://localhost:3000/stake/6843c938b9c7e20aacaa63b8 HTTP/1.1
+
+
+### Not Found
+GET http://localhost:3000/like HTTP/1.1
+
+
+## WARDS ROUTES
+
+### Get all wards
+GET http://localhost:3000/ward HTTP/1.1
+
+###
+
+# Get Ward by ID
+GET http://localhost:3000/ward/6843bf3362a8e9e5ed212fee
+
+
+### # Create Ward
+POST http://localhost:3000/ward HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Nahulingo",
+    "stakeId": "6843d6b65c5845bd8531a362"
+}
+
+### # Update Ward
+PUT http://localhost:3000/ward/6843bf6262a8e9e5ed212fef HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Angel",
+    "stakeId": "6843be3262a8e9e5ed212feb"
+}
+
+### # Delete Ward
+DELETE http://localhost:3000/ward/6843e58c6cf22b4c702c8476 HTTP/1.1
+
+
+## MEMBERS ROUTES
+
+### Get all members
+GET http://localhost:3000/member HTTP/1.1
+
+###
+
+# Get Member by ID
+GET http://localhost:3000/member/6843bf9962a8e9e5ed212ff1
+
+
+### # Create Member
+POST http://localhost:3000/member HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Katherine Crespin",
+  "birthday": "16-11-1997",
+  "email": "crespin.vega@gmail.com",
+  "wardId": "6843bf6262a8e9e5ed212fef"
+}
+
+### # Update Member
+PUT http://localhost:3000/member/6843c07662a8e9e5ed212ff3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Hector Martinez",
+  "birthday": "15-07-1962",
+  "email": "hector.martinez@outlook.com",
+  "wardId": "6843bf3362a8e9e5ed212fee"
+}
+
+### # Delete Member
+DELETE http://localhost:3000/member/6843efd614f39661be71eb3a HTTP/1.1
+
+
+## ANCESTORS ROUTES
+
+### Get all ancestors
+GET http://localhost:3000/ancestor HTTP/1.1
+
+###
+
+# Get Ancestor by ID
+GET http://localhost:3000/ancestor/6843c2f67aff4cd67e06d331
+
+
+### # Create Ancestor
+POST http://localhost:3000/ancestor HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Carlos Jr",
+  "lastName": "Ortiz",
+  "confirmation": true,
+  "initiatory": true,
+  "endowment": true,
+  "sealingSpouse": false,
+  "sealingParents": false,
+  "ordinanceCard": "",
+  "responsibleMember": "6843c01462a8e9e5ed212ff2",
+  "mimetypeFile": "",
+  "baptisms": true,
+  "birthday": "29-08-1911",
+  "deathdate": "14-04-1998"
+}
+
+### # Update Ancestor
+PUT http://localhost:3000/ancestor/6843fa56b4135807684088fd HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Carlos",
+  "lastName": "Hernandez Ortiz",
+  "confirmation": true,
+  "initiatory": true,
+  "endowment": true,
+  "sealingSpouse": true,
+  "ordinanceCard": "",
+  "responsibleMember": "6843c01462a8e9e5ed212ff2",
+  "mimetypeFile": "",
+  "baptisms": true,
+  "birthday": "29-08-1911",
+  "deathdate": "14-04-1998"
+}
+
+### # Delete Ancestor
+DELETE http://localhost:3000/ancestor/6843fbeeabe5f5e294605277 HTTP/1.1

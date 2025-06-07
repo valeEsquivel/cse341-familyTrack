@@ -1,0 +1,31 @@
+{
+  "name": "cse341-node-052025",
+  "version": "1.0.0",
+  "description": "Project Term 3 2025",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeEsquivel/cse341-node-052025.git"
+  },
+  "author": "Valeria Esquivel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeEsquivel/cse341-node-052025/issues"
+  },
+  "homepage": "https://github.com/valeEsquivel/cse341-node-052025#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "http-errors": "^2.0.0",
+    "mongodb": "^6.16.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0"
+  }
+}
